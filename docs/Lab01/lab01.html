@@ -89,6 +89,26 @@ body {
 	text-align: center;
 	z-index: 1;
 }
+
+.back-link {
+	position: fixed;
+	top: 16px;
+	left: 16px;
+	z-index: 9999;
+	display: inline-block;
+	padding: 10px 14px;
+	background: rgba(255, 255, 255, 0.88);
+	color: #16324f;
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: 14px;
+	border: 1px solid rgba(22, 50, 79, 0.12);
+	backdrop-filter: blur(8px);
+}
+
+.back-link:hover {
+	background: rgba(255, 255, 255, 1);
+}
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="lab01.icon.png" />
 <link rel="apple-touch-icon" href="lab01.apple-touch-icon.png"/>
@@ -215,6 +235,7 @@ const engine = new Engine(GODOT_CONFIG);
 	}
 }());
 		</script>
+		<a class="back-link" href="../index.html">กลับไปยังหน้า Labs</a>
 	</body>
 </html>
 
