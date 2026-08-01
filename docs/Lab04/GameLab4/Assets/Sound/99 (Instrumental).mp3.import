@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bfrlrdv02konj"
+path="res://.godot/imported/99 (Instrumental).mp3-c4318521cf3dce45d03229a6f9534687.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sound/99 (Instrumental).mp3"
+dest_files=["res://.godot/imported/99 (Instrumental).mp3-c4318521cf3dce45d03229a6f9534687.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

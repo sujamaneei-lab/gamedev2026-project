@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://b6uprn5sehlvc"]
+
+[ext_resource type="PackedScene" uid="uid://dy48ih04v80fn" path="res://main.tscn" id="1_jv3uo"]
+
+[node name="Node2D" type="Node2D" unique_id=920754027]
+
+[node name="Node2D2" parent="." unique_id=174092575 instance=ExtResource("1_jv3uo")]
+position = Vector2(471, 584)
+scale = Vector2(0.3, 0.3)
+
+[node name="Lleg" parent="Node2D2/Skeleton2D/body" parent_id_path=PackedInt32Array(174092575, 1229222390) index="3" unique_id=565875031]
+scale = Vector2(0.9999995, 0.9999995)
+
+[node name="AnimationPlayer" parent="Node2D2" index="2" unique_id=1010877448]
+root_node = NodePath("../../Node2D2")
+
+[node name="Node2D" parent="." unique_id=915438657 instance=ExtResource("1_jv3uo")]
+position = Vector2(239, 585)
+scale = Vector2(0.3, 0.3)
+
+[node name="Skeleton2D" parent="Node2D" index="1" unique_id=428186462]
+visible = false
+
+[node name="AnimationPlayer" parent="Node2D" index="2" unique_id=1010877448]
+autoplay = &"idle"
+
+[node name="Node2D3" parent="." unique_id=338374334 instance=ExtResource("1_jv3uo")]
+position = Vector2(687.00006, 583)
+scale = Vector2(0.3, 0.3)
+
+[node name="Skeleton2D" parent="Node2D3" index="1" unique_id=428186462]
+visible = false
+
+[node name="Lleg" parent="Node2D3/Skeleton2D/body" parent_id_path=PackedInt32Array(338374334, 1229222390) index="3" unique_id=565875031]
+scale = Vector2(0.9999996, 0.9999996)
+
+[node name="AnimationPlayer" parent="Node2D3" index="2" unique_id=1010877448]
+autoplay = &"punch"
+
+[node name="Node2D4" parent="." unique_id=983081486 instance=ExtResource("1_jv3uo")]
+position = Vector2(888, 581)
+scale = Vector2(0.3, 0.3)
+
+[node name="Skeleton2D" parent="Node2D4" index="1" unique_id=428186462]
+visible = false
+
+[node name="Lleg" parent="Node2D4/Skeleton2D/body" parent_id_path=PackedInt32Array(983081486, 1229222390) index="3" unique_id=565875031]
+scale = Vector2(0.9999996, 0.9999996)
+
+[node name="AnimationPlayer" parent="Node2D4" index="2" unique_id=1010877448]
+autoplay = &"jump"
+
+[editable path="Node2D2"]
+[editable path="Node2D"]
+[editable path="Node2D3"]
+[editable path="Node2D4"]

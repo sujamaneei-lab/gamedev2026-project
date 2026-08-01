@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://drdxgx3yir4oj"]
+
+[ext_resource type="Script" uid="uid://c6c1gukksb4y1" path="res://somtum_trap.gd" id="1_1b3im"]
+[ext_resource type="Texture2D" uid="uid://g70e11pfgqt2" path="res://pngtree-somtum-thai-food-papaya-salad-png-image_14662979.png" id="2_1rxjj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_htemk"]
+radius = 24.186773
+
+[node name="SomtumTrap" type="Area2D" unique_id=1514605387]
+script = ExtResource("1_1b3im")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1909462788]
+position = Vector2(0, 2.9999998)
+scale = Vector2(0.025, 0.025)
+texture = ExtResource("2_1rxjj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=110188818]
+shape = SubResource("CircleShape2D_htemk")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://b48s52q3f64kl"]
+
+[ext_resource type="PackedScene" uid="uid://d27bcsmx82vfa" path="res://Scenes/Actors/enemy.tscn" id="1_a4af2"]
+[ext_resource type="Script" path="res://Scenes/Actors/monster_small.gd" id="2_tyn28"]
+[ext_resource type="Texture2D" uid="uid://c8aphwp46lm2r" path="res://Legacy-Fantasy - High Forest 2.0/Legacy-Fantasy - High Forest 2.3/Mob/Snail/walk-Sheet.png" id="3_s657p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gfui1"]
+atlas = ExtResource("3_s657p")
+region = Rect2(0, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxrqx"]
+atlas = ExtResource("3_s657p")
+region = Rect2(48, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ej0hy"]
+atlas = ExtResource("3_s657p")
+region = Rect2(96, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jrfl"]
+atlas = ExtResource("3_s657p")
+region = Rect2(144, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b6urm"]
+atlas = ExtResource("3_s657p")
+region = Rect2(192, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kmraa"]
+atlas = ExtResource("3_s657p")
+region = Rect2(240, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kh5m6"]
+atlas = ExtResource("3_s657p")
+region = Rect2(288, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnuaw"]
+atlas = ExtResource("3_s657p")
+region = Rect2(336, 0, 48, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_btpgx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gfui1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxrqx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ej0hy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8jrfl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b6urm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kmraa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kh5m6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnuaw")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Enemy" unique_id=600502477 instance=ExtResource("1_a4af2")]
+script = ExtResource("2_tyn28")
+speed = 60.0
+
+[node name="RayCast2D" type="RayCast2D" parent="." index="0" unique_id=663872499]
+position = Vector2(-48, 0)
+target_position = Vector2(15, 20)
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=587424215]
+position = Vector2(0, -33)
+scale = Vector2(1.5, 1.5)
+
+[node name="CollisionShape2D2" parent="HitArea" parent_id_path=PackedInt32Array(1115411835) index="0" unique_id=2008793250]
+position = Vector2(0, -33)
+scale = Vector2(1.5, 1.5)
+
+[node name="AnimateSprite" type="AnimatedSprite2D" parent="Sprite" parent_id_path=PackedInt32Array(1445111960) index="0" unique_id=2124886695]
+position = Vector2(-1, -34)
+scale = Vector2(2.0546875, 2.0546875)
+sprite_frames = SubResource("SpriteFrames_btpgx")
+animation = &"walk"
+frame_progress = 0.89568573

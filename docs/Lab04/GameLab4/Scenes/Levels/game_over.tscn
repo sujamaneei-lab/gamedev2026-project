@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://c15tw24t3axhb"]
+
+[ext_resource type="Texture2D" uid="uid://w4wvoqj6l1y4" path="res://Untitled design (15).png" id="1_aqwrb"]
+[ext_resource type="PackedScene" uid="uid://puc4l62gx6et" path="res://Scenes/Prefabs/button_exit.tscn" id="2_buq0o"]
+
+[node name="GameOver" type="Node2D" unique_id=826370530]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1910566667]
+offset_left = -58.0
+offset_top = -15.0
+offset_right = 1206.9166
+offset_bottom = 701.0
+texture = ExtResource("1_aqwrb")
+expand_mode = 1
+
+[node name="btnExit" parent="." unique_id=1633606001 instance=ExtResource("2_buq0o")]
+offset_left = 438.0
+offset_top = 359.0
+offset_right = 564.0
+offset_bottom = 413.0
+text = "Exit to Menu"
+
+[node name="btnPlay" parent="." unique_id=1146872882 instance=ExtResource("2_buq0o")]
+offset_left = 597.0
+offset_top = 359.0
+offset_right = 723.0
+offset_bottom = 413.0
+shortcut = null
+text = "Play Again"

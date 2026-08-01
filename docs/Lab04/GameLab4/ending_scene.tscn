@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://t2xgi5v2j1sk"]
+
+[ext_resource type="Script" uid="uid://bqsvbcp56xo36" path="res://ending_scene.gd" id="1_ayyxh"]
+[ext_resource type="Texture2D" uid="uid://dadx38tc1wm1e" path="res://Untitled design (14).png" id="2_1jnvm"]
+[ext_resource type="AudioStream" uid="uid://845wscbyuo48" path="res://告白 純粋な心  Mob Psycho 100 III [OST].mp3" id="3_rfeu3"]
+
+[node name="EndingScene" type="Control" unique_id=1071375648]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ayyxh")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=188569460]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1jnvm")
+expand_mode = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1404616474]
+stream = ExtResource("3_rfeu3")
+autoplay = true

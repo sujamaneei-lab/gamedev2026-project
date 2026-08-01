@@ -1,0 +1,13 @@
+TextureRect
+AudioStreamPlayer2D
+Node2D
+TileMapLayer
+Label
+CollisionShape2D
+Sprite2D
+Area2D
+AnimatedSprite2D
+ColorRect
+RayCast2D
+AnimatableBody2D
+TileMap
