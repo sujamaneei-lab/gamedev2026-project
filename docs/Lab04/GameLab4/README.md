@@ -2,14 +2,23 @@
 
 - รหัสนักศึกษา: 683380315-0
 - ชื่อ-นามสกุล: สุจามาณี อิศรางกูร ณ อยุธยา
+- **Game Name** — จ๊ะจ๋า Adventure
 - **Game Story** — สาวน้อยหลุดเข้าไปในโลกแฟนตาซีและต้องต่อสู้ผ่านอุปสรรคต่าง ๆ เพื่อกลับบ้านให้ได้
-- **Game Style** — pixel 2D side scrolling
+- **Game Style** — pixel 2D side 
+
+
+## Preview
+<img src="docs/demo1.png" style="width:300px;" />
+<img src="docs/demo2.png" style="width:300px;" />
+
+- [Game Demo Vdo](https://drive.google.com/file/d/1t6U5VYgwPFsmbcAFFmQkyZDZxVwlUpu4/view?usp=sharing)
+- [Play Game](https://sujamaneei-lab.github.io/gamedev2026-project/)
 
 # 2D Platformer Starter Kit
 
 This starter kit provides all the essential mechanics needed to build a complete 2D platformer game in Godot 4.7. It is designed as a hands-on learning resource for students taking the **Computer Game Development** course at the **College of Computing, Khon Kaen University**.
 
-## Preview
+
 
 <img src="docs/qrcode.png" style="width:300px;" />
 
